@@ -12,4 +12,31 @@
 
  4) Now at the end of the file you have to copy this code, make sure you comment
     your original PS1 variable using # in front of it as #PS1="%n@%m %1~ %#"  
-      
+ 
+ 5) Now you will add the following code so that you will have different colors of input
+    and output . 
+
+
+
+ #For customizing 
+ autoload -U colors && colors
+ export PS1="%F{214}%K{000}%n%F{015}%K{000}:%F{039}%K{000}%~%F{015}%K{000}\$ "
+
+ export CLICOLOR=1
+ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+ alias ls='ls -Gp'
+
+ #For Desktop 
+ cd ~
+ # Useful support for interacting with Terminal.app or other terminal programs
+ [ -r "/etc/zshrc_$TERM_PROGRAM" ] && . "/etc/zshrc_$TERM_PROGRAM”
+
+  
+
+ 6) Now you save this and you are good to go. 
+
+
+
+  NOTE:Everytime you update your mac this zshrc file gets set to default , so it's better        to put the customizing portion on new file and save it . 
+
+    
