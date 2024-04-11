@@ -1,0 +1,15 @@
+ To have different output and  input color you have to follow the following steps : 
+  
+ 1) First check which shell is your mac using as default by using < echo $SHELL >
+    command , if it says (bin/zsh) then you are good to go .
+ 2) Now we need to modify zshrc file.
+    You can find this file inside the etc directory of root directory i.e /etc 
+    You can directly go to that etc directory by using < cd /etc > and do < ls >.
+    You will see zshrc file on the bottom of the the list . 
+
+ 3) Now we need to edit that zshrc file, Use < sudo nano zshrc > or <sudo vim zshrc>
+    which terminal based editor you are friendly you are . 
+
+ 4) Now at the end of the file you have to copy this code, make sure you comment
+    your original PS1 variable using # in front of it as #PS1="%n@%m %1~ %#"  
+      
